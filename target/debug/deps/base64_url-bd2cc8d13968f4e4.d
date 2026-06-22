@@ -1,0 +1,11 @@
+C:\Users\jessi\Desktop\snapkitty-resonance-isa\target\debug\deps\base64_url-bd2cc8d13968f4e4.d: C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\base64-url-1.4.13\src\lib.rs C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\base64-url-1.4.13\src\decode.rs C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\base64-url-1.4.13\src\encode.rs C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\base64-url-1.4.13\src\escape.rs C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\base64-url-1.4.13\src\unescape.rs
+
+C:\Users\jessi\Desktop\snapkitty-resonance-isa\target\debug\deps\libbase64_url-bd2cc8d13968f4e4.rlib: C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\base64-url-1.4.13\src\lib.rs C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\base64-url-1.4.13\src\decode.rs C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\base64-url-1.4.13\src\encode.rs C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\base64-url-1.4.13\src\escape.rs C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\base64-url-1.4.13\src\unescape.rs
+
+C:\Users\jessi\Desktop\snapkitty-resonance-isa\target\debug\deps\libbase64_url-bd2cc8d13968f4e4.rmeta: C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\base64-url-1.4.13\src\lib.rs C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\base64-url-1.4.13\src\decode.rs C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\base64-url-1.4.13\src\encode.rs C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\base64-url-1.4.13\src\escape.rs C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\base64-url-1.4.13\src\unescape.rs
+
+C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\base64-url-1.4.13\src\lib.rs:
+C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\base64-url-1.4.13\src\decode.rs:
+C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\base64-url-1.4.13\src\encode.rs:
+C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\base64-url-1.4.13\src\escape.rs:
+C:\Users\jessi\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\base64-url-1.4.13\src\unescape.rs:

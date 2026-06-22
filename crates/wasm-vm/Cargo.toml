@@ -1,0 +1,23 @@
+[package]
+name    = "wasm-vm"
+version.workspace = true
+edition.workspace = true
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+abjad     = { path = "../abjad" }
+ir        = { path = "../ir" }
+assembler = { path = "../assembler" }
+vm        = { path = "../vm" }
+deed      = { path = "../deed" }
+umo       = { path = "../umo" }
+sha2      = { workspace = true }
+hex       = { workspace = true }
+wasm-bindgen     = "0.2"
+serde            = { version = "1", features = ["derive"] }
+serde-wasm-bindgen = "0.6"
+
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = false

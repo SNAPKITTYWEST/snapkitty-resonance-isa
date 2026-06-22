@@ -6,6 +6,8 @@ members = [
     "crates/vm",
     "crates/deed",
     "crates/umo",
+    "crates/wasm-vm",
+    "crates/swarm",
     "crates/cli",
 ]
 resolver = "2"
@@ -21,3 +23,5 @@ repository  = "https://github.com/SNAPKITTYWEST/snapkitty-resonance-isa"
 sha2    = "0.10"
 hex     = "0.4"
 clap    = { version = "4", features = ["derive"] }
+serde   = { version = "1", features = ["derive"] }
+serde-wasm-bindgen = "0.6"
