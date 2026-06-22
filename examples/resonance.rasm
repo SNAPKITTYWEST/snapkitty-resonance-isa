@@ -1,0 +1,25 @@
+; SNAPKITTY RESONANCE ASSEMBLY — canonical sovereign program
+; Pipeline: E → A → A → C → D → G → F → H
+; Meaning:  ENTER → LOAD → LOAD → COMPARE → BRANCH → SIGNAL → FREEZE → HALT
+
+; Enter the resonance scope / deed boundary
+E field_core
+
+; Load trust and entropy registers
+A trust_vector
+A entropy_register
+
+; Compare entropy against threshold (0.21)
+C entropy_register 0.21
+
+; Branch if entropy too high → raise degradation
+D fail_safe_branch
+
+; Emit coherence pulse to UMO
+G resonance_signal
+
+; Freeze execution state (WORM boundary)
+F seal_state
+
+; Terminate
+H

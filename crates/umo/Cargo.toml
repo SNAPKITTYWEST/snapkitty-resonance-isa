@@ -1,0 +1,8 @@
+[package]
+name    = "umo"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+vm   = { path = "../vm" }
+deed = { path = "../deed" }

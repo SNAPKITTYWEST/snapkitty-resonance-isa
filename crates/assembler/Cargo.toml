@@ -1,0 +1,8 @@
+[package]
+name    = "assembler"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+abjad = { path = "../abjad" }
+ir    = { path = "../ir" }

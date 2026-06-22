@@ -1,0 +1,19 @@
+[package]
+name    = "cli"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "rasm"
+path = "src/main.rs"
+
+[dependencies]
+abjad     = { path = "../abjad" }
+ir        = { path = "../ir" }
+assembler = { path = "../assembler" }
+vm        = { path = "../vm" }
+deed      = { path = "../deed" }
+umo       = { path = "../umo" }
+clap      = { workspace = true }
+sha2      = { workspace = true }
+hex       = { workspace = true }

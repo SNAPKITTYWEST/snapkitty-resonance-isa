@@ -1,0 +1,23 @@
+[workspace]
+members = [
+    "crates/abjad",
+    "crates/ir",
+    "crates/assembler",
+    "crates/vm",
+    "crates/deed",
+    "crates/umo",
+    "crates/cli",
+]
+resolver = "2"
+
+[workspace.package]
+version     = "0.1.0"
+edition     = "2021"
+authors     = ["Ahmad Ali Parr <ahmedparr93@gmail.com>"]
+license     = "Sovereign-Source-1.0"
+repository  = "https://github.com/SNAPKITTYWEST/snapkitty-resonance-isa"
+
+[workspace.dependencies]
+sha2    = "0.10"
+hex     = "0.4"
+clap    = { version = "4", features = ["derive"] }
