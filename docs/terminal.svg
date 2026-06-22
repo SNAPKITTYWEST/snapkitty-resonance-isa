@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="700" viewBox="0 0 980 700" role="img" aria-labelledby="title desc">
+  <title id="title">SnapKitty Resonance ISA terminal animation</title>
+  <desc id="desc">Animated terminal trace for the Resonance VM running trust_vector.rasm, ending with WORM seal and meta_block valid status.</desc>
+  <defs>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="scan" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#C9A84C" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#C9A84C" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#C9A84C" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      :root {
+        --gold: #C9A84C;
+        --black: #020205;
+        --dim: #7f6a31;
+      }
+
+      .bg { fill: var(--black); }
+      .frame { fill: none; stroke: var(--gold); stroke-width: 2; }
+      .thin { stroke: var(--gold); stroke-width: 1; opacity: 0.55; }
+      .terminal {
+        fill: var(--gold);
+        font-family: "Space Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+        font-size: 20px;
+        letter-spacing: 0.2px;
+      }
+      .small { font-size: 16px; }
+      .dim { fill: var(--dim); }
+      .title { font-size: 24px; font-weight: 700; filter: url(#glow); }
+      .seal { font-size: 22px; font-weight: 700; filter: url(#glow); }
+      .line {
+        opacity: 0;
+        animation: reveal 18s steps(1, end) infinite;
+      }
+      .cmd { animation-delay: 0.4s; }
+      .l0 { animation-delay: 1.4s; }
+      .sep1 { animation-delay: 2.2s; }
+      .l1 { animation-delay: 3.0s; }
+      .l2 { animation-delay: 4.0s; }
+      .l3 { animation-delay: 5.0s; }
+      .l4 { animation-delay: 6.0s; }
+      .l5 { animation-delay: 7.0s; }
+      .l6 { animation-delay: 8.0s; }
+      .l7 { animation-delay: 9.0s; }
+      .l8 { animation-delay: 10.0s; }
+      .sep2 { animation-delay: 10.8s; }
+      .m1 { animation-delay: 11.6s; }
+      .m2 { animation-delay: 12.3s; }
+      .m3 { animation-delay: 13.0s; }
+      .sig { animation-delay: 13.8s; }
+      .seal-line { animation-delay: 14.6s; }
+      .meta { animation-delay: 15.4s; }
+      .cursor {
+        animation: cursorBlink 0.8s steps(1, end) infinite;
+      }
+      .pulse {
+        animation: pulseGold 1.8s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .bar {
+        transform: scaleX(0);
+        transform-origin: 70px 654px;
+        animation: fillBar 18s ease-out infinite;
+      }
+      .scan {
+        fill: url(#scan);
+        animation: scanline 5s linear infinite;
+      }
+
+      @keyframes reveal {
+        0%, 3% { opacity: 0; }
+        8%, 92% { opacity: 1; }
+        100% { opacity: 0; }
+      }
+
+      @keyframes cursorBlink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+
+      @keyframes pulseGold {
+        0%, 100% { opacity: 0.75; transform: scale(1); }
+        50% { opacity: 1; transform: scale(1.04); }
+      }
+
+      @keyframes fillBar {
+        0%, 8% { transform: scaleX(0); }
+        86%, 92% { transform: scaleX(1); }
+        100% { transform: scaleX(0); }
+      }
+
+      @keyframes scanline {
+        0% { transform: translateY(-700px); }
+        100% { transform: translateY(700px); }
+      }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="980" height="700"/>
+  <rect class="frame" x="24" y="24" width="932" height="652" rx="10"/>
+  <rect class="thin" x="42" y="42" width="896" height="616" rx="6"/>
+  <rect class="scan" x="42" y="42" width="896" height="120"/>
+
+  <text class="terminal title" x="64" y="82">☉⌹○◇△⬡ Ω  SNAPKITTY RESONANCE ISA</text>
+  <text class="terminal small dim" x="64" y="112">WASM RUNTIME · TRUST VECTOR EXECUTION · WORM BOUNDARY</text>
+  <line class="thin" x1="64" y1="132" x2="916" y2="132"/>
+
+  <text class="terminal line cmd" x="64" y="172">$ ./sovereign run trust_vector.rasm<tspan class="cursor">█</tspan></text>
+
+  <text class="terminal line l0" x="64" y="218">⟦ Ω ⟧ Resonance VM v1.0 — WASM Runtime</text>
+  <text class="terminal line sep1" x="64" y="250">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</text>
+  <text class="terminal line l1" x="64" y="282">[00] ENTER    field_core      → ScopeOpened</text>
+  <text class="terminal line l2" x="64" y="314">[01] LOAD     trust_vector    → Loaded</text>
+  <text class="terminal line l3" x="64" y="346">[02] LOAD     entropy_reg     → Loaded</text>
+  <text class="terminal line l4" x="64" y="378">[03] COMPARE  entropy_reg     → 0.0412 &lt; 0.21 ✓</text>
+  <text class="terminal line l5" x="64" y="410">[04] BRANCH   fail_safe       → Skipped</text>
+  <text class="terminal line l6" x="64" y="442">[05] SIGNAL   resonance_pulse → SignalEmitted ⚡</text>
+  <text class="terminal line l7" x="64" y="474">[06] FREEZE   seal_state      → WORMBoundary</text>
+  <text class="terminal line l8" x="64" y="506">[07] HALT                     → Halted ✓</text>
+  <text class="terminal line sep2" x="64" y="538">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</text>
+
+  <text class="terminal line m1" x="64" y="574">τ trust     → 0.9821</text>
+  <text class="terminal line m2" x="64" y="604">ε entropy   → 0.0412</text>
+  <text class="terminal line m3" x="64" y="634">ρ resonance → 0.8834</text>
+
+  <text class="terminal seal line sig pulse" x="600" y="574">☉⌹○◇△⬡ Ω</text>
+  <text class="terminal small line seal-line" x="600" y="606">WORM SEAL: 7dd507eadc5c8670...</text>
+  <text class="terminal small line meta" x="600" y="634">meta_block(valid).</text>
+
+  <rect class="thin" x="64" y="646" width="852" height="14" rx="7"/>
+  <rect class="bar" x="68" y="650" width="844" height="6" rx="3" fill="#C9A84C"/>
+</svg>
