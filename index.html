@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Resonance ISA — Abjad Symbolic Instruction Set</title>
+<meta name="description" content="Custom ISA: Abjad assembly to IR to Bytecode to Rust VM to Trust Deed to Unicode Mantra Oscillator waveforms. Entropy-gated execution."/>
+<meta name="theme-color" content="#bf5af2"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#04040a;--bg1:#080810;--bg2:#0d0b14;--border:#1e1828;--text:#e0e0f0;--dim:#555;--purple:#bf5af2;--green:#00ff88;--blue:#0a84ff;--mono:'SF Mono',Monaco,Consolas,monospace}
+html,body{min-height:100%;background:var(--bg);color:var(--text);font-family:var(--mono)}
+a{color:inherit;text-decoration:none}
+.hero{max-width:920px;margin:0 auto;padding:80px 24px 60px;text-align:center}
+.mark{display:inline-flex;align-items:center;gap:8px;font-size:9px;letter-spacing:3px;color:var(--purple);border:1px solid #3a1a48;border-radius:4px;padding:4px 12px;margin-bottom:32px}
+h1{font-size:clamp(28px,5vw,52px);font-weight:700;line-height:1.1;margin-bottom:18px}
+h1 span{color:var(--purple)}
+.sub{font-size:15px;color:#666;line-height:1.7;max-width:560px;margin:0 auto 40px}
+.ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-primary{padding:12px 28px;background:var(--purple);color:#fff;border-radius:8px;font-weight:700;font-size:13px;font-family:var(--mono)}
+.btn-ghost{padding:12px 28px;border:1px solid var(--border);color:#888;border-radius:8px;font-size:13px;font-family:var(--mono)}
+.pipeline{max-width:720px;margin:0 auto 72px;padding:0 24px}
+.section-label{font-size:9px;letter-spacing:3px;color:var(--dim);margin-bottom:24px;text-align:center}
+.pipe-row{display:flex;align-items:center;gap:0;margin-bottom:0}
+.pipe-stage{
+  flex:1;background:var(--bg1);border:1px solid var(--border);
+  padding:14px 16px;position:relative
+}
+.pipe-stage:not(:last-child)::after{
+  content:'>';position:absolute;right:-12px;top:50%;transform:translateY(-50%);
+  color:var(--dim);font-size:14px;z-index:1
+}
+.pipe-num{font-size:8px;color:var(--dim);margin-bottom:4px}
+.pipe-name{font-size:11px;color:var(--purple);font-weight:700}
+.pipe-sub{font-size:9px;color:var(--dim);margin-top:2px}
+.asm{max-width:640px;margin:0 auto 64px;background:var(--bg1);border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.asm-header{background:var(--bg2);border-bottom:1px solid var(--border);padding:10px 16px;font-size:9px;letter-spacing:2px;color:var(--purple)}
+.asm-body{padding:16px 20px;font-size:11px;color:var(--purple);line-height:2}
+.comment{color:var(--dim)}
+.op{color:var(--purple)}
+.arg{color:var(--green)}
+.label{color:var(--blue)}
+.features{max-width:920px;margin:0 auto;padding:0 24px 80px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.card{background:var(--bg1);border:1px solid var(--border);border-radius:10px;padding:18px 20px}
+.card-icon{font-size:18px;margin-bottom:10px}
+.card-title{font-size:12px;font-weight:700;color:var(--text);margin-bottom:6px}
+.card-desc{font-size:11px;color:#555;line-height:1.6}
+footer{border-top:1px solid var(--border);padding:20px 24px;text-align:center;font-size:10px;color:var(--dim)}
+footer a{color:var(--purple)}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="mark">SNAPKITTY SOVEREIGN OS - PROVE LANE</div>
+  <h1>Abjad assembly.<br><span>Entropy-gated VM.</span></h1>
+  <p class="sub">Resonance ISA is a custom symbolic instruction set built in Rust. Abjad numerology compiles to IR, to bytecode, to a VM that seals its own execution as a Trust Deed, then emits Unicode Mantra Oscillator waveforms.</p>
+  <div class="ctas">
+    <a class="btn-primary" href="https://github.com/SNAPKITTYWEST/snapkitty-resonance-isa" target="_blank">View Source</a>
+    <a class="btn-ghost" href="https://collectivekitty.com/apps" target="_blank">App Directory</a>
+  </div>
+</div>
+<div class="pipeline">
+  <p class="section-label">COMPILATION PIPELINE</p>
+  <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:2px">
+    <div class="pipe-stage"><div class="pipe-num">01</div><div class="pipe-name">Abjad</div><div class="pipe-sub">source text</div></div>
+    <div class="pipe-stage"><div class="pipe-num">02</div><div class="pipe-name">IR</div><div class="pipe-sub">intermediate</div></div>
+    <div class="pipe-stage"><div class="pipe-num">03</div><div class="pipe-name">Bytecode</div><div class="pipe-sub">sealed binary</div></div>
+    <div class="pipe-stage"><div class="pipe-num">04</div><div class="pipe-name">Rust VM</div><div class="pipe-sub">entropy-gated</div></div>
+    <div class="pipe-stage"><div class="pipe-num">05</div><div class="pipe-name">Deed</div><div class="pipe-sub">WORM sealed</div></div>
+    <div class="pipe-stage"><div class="pipe-num">06</div><div class="pipe-name">UMO</div><div class="pipe-sub">waveform out</div></div>
+  </div>
+</div>
+<div class="asm">
+  <div class="asm-header">ABJAD ASSEMBLY - SAMPLE PROGRAM</div>
+  <div class="asm-body">
+<pre><span class="comment">;; Resonance ISA - abjad numeric encoding</span>
+<span class="label">_start:</span>
+  <span class="op">LOAD</span>    <span class="arg">alef, 1</span>       <span class="comment">; letter value = 1</span>
+  <span class="op">LOAD</span>    <span class="arg">ba, 2</span>         <span class="comment">; letter value = 2</span>
+  <span class="op">RESONATE</span> <span class="arg">alef, ba</span>   <span class="comment">; combine into waveform</span>
+  <span class="op">ENTROPY</span> <span class="arg">check</span>        <span class="comment">; gate: entropy &gt; threshold?</span>
+  <span class="op">SEAL</span>    <span class="arg">trust_deed</span>   <span class="comment">; WORM seal execution</span>
+  <span class="op">EMIT</span>    <span class="arg">UMO</span>          <span class="comment">; Unicode Mantra Oscillator</span>
+  <span class="op">HALT</span></pre>
+  </div>
+</div>
+<div class="features">
+  <p class="section-label">COMPONENTS</p>
+  <div class="grid">
+    <div class="card"><div class="card-icon">arabic</div><div class="card-title">Abjad Numerology</div><div class="card-desc">Arabic-origin letter-to-number encoding system. Each letter carries a numeric weight that drives ISA opcodes and resonance tuning.</div></div>
+    <div class="card"><div class="card-icon">rust</div><div class="card-title">Rust VM</div><div class="card-desc">High-performance entropy-gated virtual machine. Instructions execute only when entropy threshold is satisfied. Built in safe Rust.</div></div>
+    <div class="card"><div class="card-icon">worm</div><div class="card-title">Trust Deed Sealing</div><div class="card-desc">Every execution cycle produces a Trust Deed. WORM-appended. The VM cannot run without signing its own output.</div></div>
+    <div class="card"><div class="card-icon">wave</div><div class="card-title">Unicode Mantra Oscillator</div><div class="card-desc">Output layer. Resonance values are emitted as Unicode waveform sequences — the ISA speaks in oscillation patterns.</div></div>
+  </div>
+</div>
+<footer>
+  Built by <a href="https://collectivekitty.com" target="_blank">SnapKitty Sovereign OS</a>
+  <a href="https://github.com/SNAPKITTYWEST/snapkitty-resonance-isa" target="_blank">GitHub</a>
+  Sovereign License
+</footer>
+</body>
+</html>
