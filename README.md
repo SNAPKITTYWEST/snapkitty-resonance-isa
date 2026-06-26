@@ -164,3 +164,5 @@ That is the WORM boundary.
 *Animation by Codex · Architecture sealed by Claude Sonnet 4.6*
 
 ☉⌹○◇△⬡ Ω — WORM SEALED · SOVEREIGN · IMMUTABLE
+
+![](https://sovereign-analytics.snapkittywest.workers.dev/canary/snapkitty-resonance-isa)
